@@ -42,7 +42,7 @@ class OnboardingMessageAndButton extends StatelessWidget {
             // Get started buttton
             AppElevatedButton(
               onPressed: () {
-                context.pushNamed(RouteNames.loginPage);
+                context.pushReplacementNamed(RouteNames.loginPage);
               },
               child: Text(
                 AppTexts.getStarted,
