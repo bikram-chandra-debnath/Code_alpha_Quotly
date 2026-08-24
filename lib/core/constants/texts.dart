@@ -12,7 +12,41 @@ class AppTexts {
   static const String onboardingSubtitle =
       "Join our community of wordsmiths and start sharing your quotes today!";
 
+  // ---------[Sign Up & Login page]----------
+
+  static const String joinCommunity = "Join our community today!";
+  static const String signUp = "Sign Up";
+  static const String firstName = "First Name";
+  static const String surname = "Surname";
+  static const String mobilePhone = "Mobile Phone (Optional)";
+  static const String emailAddress = "Email Address";
+  static const String password = "Password";
+
+  static const String signUpTerms =
+      "By signing up, you agree to our terms and conditions.";
+
+  static const String login = "Login";
+  static const String userName = "Username";
+
+  //------[forget password page]--------
+
+  static const String resetYourPassword = "Reset Your Password";
+  static const String otpVerification = "OTP Verification";
+
+  static const String newPassword = "New Password";
+  static const String enterOTP = "Enter OTP";
+  static const String successfull = "Successfull";
+  static const String passwordChanged =
+      "Your Password has been changed successfully.";
+
   // --------[Buttons]---------
 
   static const String getStarted = "Get Started";
+  static const String createAccount = "Create Account";
+  static const String signIn = "Sign In";
+  static const String forgetPassword = "Forgot Password";
+  static const String signUpGoogle = "Sign Up with Google";
+  static const String signUpApple = "Sign Up with Apple";
+  static const String signUpFacbook = "Sign Up with Facebook";
+  static const String verifyOTP = "Verify OTP";
 }
