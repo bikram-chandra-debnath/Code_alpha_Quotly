@@ -28,7 +28,7 @@ class AppTextField extends StatelessWidget {
 
       child: TextFormField(
         minLines: minLines,
-        maxLines: maxLines,
+        maxLines: obscureText ? 1 : maxLines,
         controller: controller,
         obscureText: obscureText,
         decoration: InputDecoration(
