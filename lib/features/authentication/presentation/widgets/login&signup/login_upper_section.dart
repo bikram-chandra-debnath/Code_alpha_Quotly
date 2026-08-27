@@ -24,7 +24,7 @@ class LoginUpperSection extends StatelessWidget {
         SizedBox(height: AppSizes.spaceBtwInputFields),
         // password field
         AppTextField(hintText: AppTexts.password),
-        SizedBox(height: AppSizes.spaceBtwSections),
+        SizedBox(height: AppSizes.spaceBtwInputFields),
       ],
     );
   }
