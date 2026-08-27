@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quotly/core/constants/padding.dart';
-import 'package:quotly/features/authentication/presentation/widgets/login&signup/lower_section.dart';
-import 'package:quotly/features/authentication/presentation/widgets/login&signup/upper_section.dart';
+import 'package:quotly/features/authentication/presentation/widgets/login&signup/login_lower_section.dart';
+import 'package:quotly/features/authentication/presentation/widgets/login&signup/login_upper_section.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

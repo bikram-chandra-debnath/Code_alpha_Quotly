@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:quotly/core/common/widgets/text_field/text_field.dart';
 import 'package:quotly/core/constants/sizes.dart';
@@ -25,7 +24,7 @@ class LoginUpperSection extends StatelessWidget {
         SizedBox(height: AppSizes.spaceBtwInputFields),
         // password field
         AppTextField(hintText: AppTexts.password),
-        SizedBox(height: AppSizes.spaceBtwSections * 2),
+        SizedBox(height: AppSizes.spaceBtwSections),
       ],
     );
   }

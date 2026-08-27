@@ -4,4 +4,5 @@ class RouteNames {
   static const String onboardingPage = "onboardingPage";
   static const String splashPage = "splashPage";
   static const String loginPage = "loginPage";
+  static const String signUpPage = "signUpPage";
 }
