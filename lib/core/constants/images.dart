@@ -7,4 +7,6 @@ class AppImages {
   static const String onboardingBanner = "assets/onboarding/quote_banner.svg";
   static const String men = "assets/onboarding/men.svg";
   static const String ellipsShape = "assets/onboarding/ellips-shape.svg";
+  // --------[authentication]-----
+  static const String successful = "assets/authentication/successful.svg";
 }

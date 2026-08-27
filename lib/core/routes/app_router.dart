@@ -1,6 +1,9 @@
 import 'package:go_router/go_router.dart';
+import 'package:quotly/core/common/pages/otp_verification.dart';
+import 'package:quotly/core/common/pages/success_page.dart';
 import 'package:quotly/core/routes/route_names.dart';
 import 'package:quotly/core/routes/route_path.dart';
+import 'package:quotly/features/authentication/presentation/pages/forget_password/forget_password_page.dart';
 import 'package:quotly/features/authentication/presentation/pages/login&signup/login_page.dart';
 import 'package:quotly/features/authentication/presentation/pages/login&signup/sign_up_page.dart';
 import 'package:quotly/features/authentication/presentation/pages/onboarding/onboarding.dart';
@@ -28,6 +31,24 @@ final routers = GoRouter(
       path: RoutePath.signUpPage,
       name: RouteNames.signUpPage,
       builder: (context, state) => SignUpPage(),
+    ),
+    GoRoute(
+      path: RoutePath.forgetPasswordPage,
+      name: RouteNames.forgetPasswordPage,
+      builder: (context, state) => ForgetPasswordPage(),
+    ),
+    GoRoute(
+      path: RoutePath.oTPVerificationPage,
+      name: RouteNames.oTPVerificationPage,
+      builder: (context, state) => OtpVerificationPage(),
+    ),
+    GoRoute(
+      path: RoutePath.successPage,
+      name: RouteNames.successPage,
+      builder: (context, state) {
+        final message =  state.extra as String;
+        return SuccessPage(message: message,);
+      },
     ),
   ],
 );

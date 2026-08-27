@@ -29,7 +29,9 @@ class LoginLowerSection extends StatelessWidget {
         // Forget password button
         AppElevatedButton(
           backgroundColor: AppColors.buttonPrimary.withValues(alpha: 0.5),
-          onPressed: () {},
+          onPressed: () {
+            context.pushNamed(RouteNames.forgetPasswordPage);
+          },
           child: Text(
             AppTexts.forgetPassword,
             style: Theme.of(context).textTheme.titleLarge,

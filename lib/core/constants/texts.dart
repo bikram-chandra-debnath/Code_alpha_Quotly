@@ -34,6 +34,7 @@ class AppTexts {
   static const String otpVerification = "OTP Verification";
 
   static const String newPassword = "New Password";
+  static const String confirmPassword = "Confirm Password";
   static const String enterOTP = "Enter OTP";
   static const String successfull = "Successfull";
   static const String passwordChanged =
