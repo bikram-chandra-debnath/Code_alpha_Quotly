@@ -56,24 +56,28 @@ class PostCard extends StatelessWidget {
             postTime: postTime,
           ),
 
-          // status
-          Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSizes.defaultSpace,
-            ),
-            child: SeeMoreText(
-              text: postStatus ?? "",
-              seeMoreText: "see more",
-              seeLessText: "see less",
-              maxLines: 2,
-              textStyle: Theme.of(context).textTheme.bodyMedium,
-            ),
+          Column(
+            children: [
+              // status
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSizes.defaultSpace,
+                ),
+                child: SeeMoreText(
+                  text: postStatus ?? "",
+                  seeMoreText: "see more",
+                  seeLessText: "see less",
+                  maxLines: 2,
+                  textStyle: Theme.of(context).textTheme.bodyMedium,
+                ),
+              ),
+
+              SizedBox(height: AppSizes.spaceBtwItems),
+
+              // image
+              Image.network(postImage ?? "", fit: BoxFit.cover),
+            ],
           ),
-
-          SizedBox(height: AppSizes.spaceBtwItems),
-
-          // image
-          Image.network(postImage ?? "", fit: BoxFit.cover),
 
           // reactions
           Padding(
