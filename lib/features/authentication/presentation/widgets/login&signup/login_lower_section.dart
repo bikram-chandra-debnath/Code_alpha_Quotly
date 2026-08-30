@@ -14,6 +14,7 @@ class LoginLowerSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        // Forget password button
         Align(
           alignment: Alignment.topRight,
           child: GestureDetector(
@@ -29,7 +30,9 @@ class LoginLowerSection extends StatelessWidget {
         SizedBox(height: AppSizes.spaceBtwSections * 0.75),
         // sign in button
         AppElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            context.pushReplacementNamed(RouteNames.homePage);
+          },
           child: Text(
             AppTexts.signIn,
             style: Theme.of(
@@ -37,9 +40,6 @@ class LoginLowerSection extends StatelessWidget {
             ).textTheme.titleLarge!.copyWith(color: AppColors.textWhite),
           ),
         ),
-        SizedBox(height: AppSizes.spaceBtwItems),
-
-        // Forget password button
         SizedBox(height: AppSizes.spaceBtwItems),
 
         // create account button

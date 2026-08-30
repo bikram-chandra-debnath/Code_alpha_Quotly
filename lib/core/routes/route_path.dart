@@ -8,4 +8,5 @@ class RoutePath {
   static const String forgetPasswordPage = "/forgetPasswordPage";
   static const String oTPVerificationPage = "/oTPVerificationPage";
   static const String successPage = "/successPage";
+  static const String homePage = "/homePage";
 }
