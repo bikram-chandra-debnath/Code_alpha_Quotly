@@ -10,7 +10,7 @@ class AppTextField extends StatelessWidget {
     this.obscureText = false,
     this.borderRadius = 100,
     this.minLines,
-    this.maxLines,
+    this.maxLines,  this.backgroundColor =  AppColors.inputBackground,
   });
   final String? hintText;
   final TextEditingController? controller;
@@ -18,11 +18,12 @@ class AppTextField extends StatelessWidget {
   final bool obscureText;
   final double borderRadius;
   final int? minLines, maxLines;
+  final Color backgroundColor;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppColors.inputBackground,
+        color:backgroundColor,
         borderRadius: BorderRadius.circular(borderRadius),
       ),
 
