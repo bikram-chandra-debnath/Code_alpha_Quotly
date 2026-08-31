@@ -10,7 +10,8 @@ class AppTextField extends StatelessWidget {
     this.obscureText = false,
     this.borderRadius = 100,
     this.minLines,
-    this.maxLines,  this.backgroundColor =  AppColors.inputBackground,
+    this.maxLines,
+    this.backgroundColor = AppColors.inputBackground, this.contentPadding,
   });
   final String? hintText;
   final TextEditingController? controller;
@@ -19,11 +20,12 @@ class AppTextField extends StatelessWidget {
   final double borderRadius;
   final int? minLines, maxLines;
   final Color backgroundColor;
+  final EdgeInsetsGeometry? contentPadding;
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color:backgroundColor,
+        color: backgroundColor,
         borderRadius: BorderRadius.circular(borderRadius),
       ),
 
@@ -33,6 +35,7 @@ class AppTextField extends StatelessWidget {
         controller: controller,
         obscureText: obscureText,
         decoration: InputDecoration(
+          contentPadding: contentPadding,
           border: OutlineInputBorder(borderSide: BorderSide.none),
           errorBorder: OutlineInputBorder(borderSide: BorderSide.none),
           enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
