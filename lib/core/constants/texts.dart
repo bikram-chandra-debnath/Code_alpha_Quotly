@@ -40,6 +40,14 @@ class AppTexts {
   static const String passwordChanged =
       "Your Password has been changed successfully.";
 
+  // --------[New post page]--------
+
+  static const String newPost = "New Post";
+  static const String menstion = "Mention Someone";
+  static const String audience = "Audience";
+  static const String addDescription = "Add a description";
+  static const String showBadge = "Show Quite Badge";
+
   // --------[Buttons]---------
 
   static const String getStarted = "Get Started";
@@ -50,4 +58,5 @@ class AppTexts {
   static const String signUpApple = "Sign Up with Apple";
   static const String signUpFacbook = "Sign Up with Facebook";
   static const String verifyOTP = "Verify OTP";
+  static const String share = "Share";
 }

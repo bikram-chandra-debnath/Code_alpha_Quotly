@@ -1,17 +1,21 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quotly/core/common/widgets/avatar/circular_avatar.dart';
 import 'package:quotly/core/constants/colors.dart';
+import 'package:quotly/core/routes/route_names.dart';
 
 class MakePost extends StatelessWidget {
-  const MakePost({super.key});
+  const   MakePost({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        context.pushNamed(RouteNames.newPostPage);
+      },
       child: SizedBox(
         height: 70,
         width: 70,

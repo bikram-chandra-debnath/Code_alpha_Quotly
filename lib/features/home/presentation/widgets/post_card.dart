@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:quotly/core/common/widgets/avatar/circular_avatar.dart';
-import 'package:quotly/core/common/widgets/buttons/followButton.dart';
+import 'package:quotly/core/common/widgets/buttons/follow_button.dart';
 import 'package:quotly/core/constants/colors.dart';
 import 'package:quotly/core/constants/sizes.dart';
 import 'package:quotly/features/home/presentation/widgets/reaction.dart';

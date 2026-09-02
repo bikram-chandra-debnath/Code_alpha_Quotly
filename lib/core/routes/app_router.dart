@@ -9,6 +9,7 @@ import 'package:quotly/features/authentication/presentation/pages/login&signup/s
 import 'package:quotly/features/authentication/presentation/pages/onboarding/onboarding.dart';
 import 'package:quotly/features/authentication/presentation/pages/splash/splash_page.dart';
 import 'package:quotly/features/home/presentation/pages/home_page.dart';
+import 'package:quotly/features/home/presentation/pages/new_post/new_post_page.dart';
 
 final routers = GoRouter(
   initialLocation: RoutePath.splashPage,
@@ -56,6 +57,13 @@ final routers = GoRouter(
       name: RouteNames.homePage,
       builder: (context, state) {
         return HomePage();
+      },
+    ),
+    GoRoute(
+      path: RoutePath.newPostPage,
+      name: RouteNames.newPostPage,
+      builder: (context, state) {
+        return NewPostPage();
       },
     ),
   ],

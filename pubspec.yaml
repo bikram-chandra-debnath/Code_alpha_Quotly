@@ -22,8 +22,10 @@ dependencies:
   google_fonts: ^8.2.1
   flutter_svg: ^2.3.0
   iconsax: ^0.0.8
-  see_more: ^2.2.0
   see_more_text: ^1.1.1
+  animated_toggle_switch: ^0.8.7
+  flutter_switch: ^0.3.2
+  # image_picker: ^1.2.3
 
 dev_dependencies:
   flutter_test:

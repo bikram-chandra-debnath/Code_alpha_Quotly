@@ -9,4 +9,5 @@ class RoutePath {
   static const String oTPVerificationPage = "/oTPVerificationPage";
   static const String successPage = "/successPage";
   static const String homePage = "/homePage";
+  static const String newPostPage = "/newPostPage";
 }
