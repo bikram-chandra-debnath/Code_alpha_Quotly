@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quotly/features/home/presentation/widgets/home_app_bar.dart';
-import 'package:quotly/features/home/presentation/widgets/quote_feed.dart';
+import 'package:quotly/features/home/presentation/widgets/home/home_app_bar.dart';
+import 'package:quotly/features/home/presentation/widgets/home/quote_feed.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

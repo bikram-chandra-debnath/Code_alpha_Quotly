@@ -10,7 +10,7 @@ import 'package:quotly/features/authentication/presentation/pages/login&signup/s
 import 'package:quotly/features/authentication/presentation/pages/onboarding/onboarding.dart';
 import 'package:quotly/features/authentication/presentation/pages/splash/splash_page.dart';
 import 'package:quotly/features/home/presentation/bloc/image_picker/image_bloc.dart';
-import 'package:quotly/features/home/presentation/pages/home_page.dart';
+import 'package:quotly/features/home/presentation/pages/home/home_page.dart';
 import 'package:quotly/features/home/presentation/pages/new_post/new_post_page.dart';
 
 final routers = GoRouter(

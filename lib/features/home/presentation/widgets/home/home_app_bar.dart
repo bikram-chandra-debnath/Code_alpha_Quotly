@@ -6,8 +6,8 @@ import 'package:quotly/core/constants/colors.dart';
 import 'package:quotly/core/constants/sizes.dart';
 import 'package:quotly/core/constants/texts.dart';
 import 'package:quotly/core/utilities/helpers/device_helper.dart';
-import 'package:quotly/features/home/presentation/widgets/friends_storie.dart';
-import 'package:quotly/features/home/presentation/widgets/make_post.dart';
+import 'package:quotly/features/home/presentation/widgets/home/friends_storie.dart';
+import 'package:quotly/features/home/presentation/widgets/home/make_post.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});

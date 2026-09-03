@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quotly/features/home/presentation/widgets/post_card.dart';
+import 'package:quotly/features/home/presentation/widgets/home/post_card.dart';
 
 class QuoteFeed extends StatelessWidget {
   const QuoteFeed({super.key});
