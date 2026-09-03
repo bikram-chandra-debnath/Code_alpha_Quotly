@@ -25,7 +25,7 @@ dependencies:
   see_more_text: ^1.1.1
   animated_toggle_switch: ^0.8.7
   flutter_switch: ^0.3.2
-  # image_picker: ^1.2.3
+  image_picker: ^1.2.3
 
 dev_dependencies:
   flutter_test:

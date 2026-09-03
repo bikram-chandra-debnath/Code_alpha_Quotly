@@ -47,6 +47,8 @@ class AppTexts {
   static const String audience = "Audience";
   static const String addDescription = "Add a description";
   static const String showBadge = "Show Quite Badge";
+  static const String faieldImage = "Failed to load image";
+  static const String noImage = "No image selected";
 
   // --------[Buttons]---------
 
