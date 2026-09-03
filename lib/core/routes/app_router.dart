@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:quotly/core/common/pages/otp_verification.dart';
@@ -44,7 +45,10 @@ final routers = GoRouter(
     GoRoute(
       path: RoutePath.oTPVerificationPage,
       name: RouteNames.oTPVerificationPage,
-      builder: (context, state) => OtpVerificationPage(),
+      builder: (context, state) {
+        final onPressed = state.extra as VoidCallback;
+        return OtpVerificationPage(onVerify: onPressed);
+      },
     ),
     GoRoute(
       path: RoutePath.successPage,
@@ -64,7 +68,7 @@ final routers = GoRouter(
     GoRoute(
       path: RoutePath.newPostPage,
       name: RouteNames.newPostPage,
-      
+
       builder: (context, state) {
         return BlocProvider(
           create: (context) => ImagePickerBloc(),

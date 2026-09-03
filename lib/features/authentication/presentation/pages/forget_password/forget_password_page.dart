@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:quotly/core/common/widgets/buttons/elevated_button.dart';
@@ -49,7 +51,19 @@ class ForgetPasswordPage extends StatelessWidget {
               // verify button
               AppElevatedButton(
                 onPressed: () {
-                  context.pushNamed(RouteNames.oTPVerificationPage);
+                  context.pushNamed(
+                    RouteNames.oTPVerificationPage,
+                    extra: () {
+                      context.pushNamed(
+                        RouteNames.successPage,
+                        extra: AppTexts.passwordChanged,
+                      );
+                      Timer(
+                        Duration(seconds: 5),
+                        () => context.pushReplacementNamed(RouteNames.homePage),
+                      );
+                    },
+                  );
                 },
                 child: Text(
                   AppTexts.verifyOTP,

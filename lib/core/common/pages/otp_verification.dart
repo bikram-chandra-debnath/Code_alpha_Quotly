@@ -1,15 +1,17 @@
+
+
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:quotly/core/common/widgets/buttons/elevated_button.dart';
 import 'package:quotly/core/common/widgets/text_field/text_field.dart';
 import 'package:quotly/core/constants/colors.dart';
 import 'package:quotly/core/constants/padding.dart';
 import 'package:quotly/core/constants/sizes.dart';
 import 'package:quotly/core/constants/texts.dart';
-import 'package:quotly/core/routes/route_names.dart';
 
 class OtpVerificationPage extends StatelessWidget {
-  const OtpVerificationPage({super.key});
+  const OtpVerificationPage({super.key, required this.onVerify});
+
+  final VoidCallback onVerify;
 
   @override
   Widget build(BuildContext context) {
@@ -35,12 +37,7 @@ class OtpVerificationPage extends StatelessWidget {
               SizedBox(height: AppSizes.spaceBtwSections),
               // verify button
               AppElevatedButton(
-                onPressed: () {
-                  context.pushNamed(
-                    RouteNames.successPage,
-                    extra: AppTexts.passwordChanged,
-                  );
-                },
+                onPressed: onVerify,
                 child: Text(
                   AppTexts.verifyOTP,
                   style: Theme.of(

@@ -37,8 +37,11 @@ class AppTexts {
   static const String confirmPassword = "Confirm Password";
   static const String enterOTP = "Enter OTP";
   static const String successfull = "Successfull";
+
+  // success page messages
   static const String passwordChanged =
       "Your Password has been changed successfully.";
+  static const String postSuccess = "Your post uploaded successfully";
 
   // --------[New post page]--------
 
